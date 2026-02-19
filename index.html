@@ -1,0 +1,222 @@
+<!-- ========================================== -->
+<!-- FRENCH VERSION (Wallonie/Bruxelles)        -->
+<!-- Folder: /fr/                               -->
+<!-- File: index.html                           -->
+<!-- ========================================== -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligence Positionnelle & Analyse d'Asymétrie des Pairs™ | Homieux Media</title>
+    <meta name="description" content="Système d'intelligence concurrentielle pour cabinets belges. Analysez la pression Big 4 & Moore et structurez votre défense stratégique.">
+    
+    <!-- Google Fonts: Epilogue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="https://homieuxmedia.com" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <img src="logo-homieux.png" alt="Logo Homieux Media - Retour à l'accueil" class="logo-img">
+            </a>
+            <div class="header-meta">
+                <span class="tagline">Système d'Intelligence Stratégique</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="container">
+            
+            <!-- Intro Section -->
+            <section id="intro-section" class="section active">
+                <div class="hero-text">
+                    <h1>Défendez Votre Territoire.</h1>
+                    <p class="subtitle">Analysez la pression d'encerclement des Big 4 et de Moore, et structurez votre contre-offre stratégique.</p>
+                </div>
+                <div class="value-prop">
+                    <p>Cet outil d'intelligence positionnelle modélise la vulnérabilité de votre portefeuille face à la consolidation du marché belge. Basé sur l'analyse des signaux publics (recrutement, annonces de croissance, registres de transparence).</p>
+                </div>
+                <button class="btn-primary" onclick="app.nextStep()">Démarrer l'Analyse Stratégique</button>
+            </section>
+
+            <!-- Step 1: Specialization -->
+            <section id="step-1" class="section">
+                <div class="progress-bar"><div class="progress-fill" style="width: 20%"></div></div>
+                <h2>1. Votre Domaine de Spécialisation Principal</h2>
+                <p class="step-desc">Sélectionnez le cœur de votre valeur ajoutée actuelle.</p>
+                <div class="options-grid">
+                    <button class="option-card" onclick="app.selectOption('spec', 'tax_litigation', this)">
+                        <h3>Fiscal & Contentieux</h3>
+                        <p>Défense fiscale, contentieux administratifs, régularisations.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('spec', 'corporate_ma', this)">
+                        <h3>Corporate & M&A</h3>
+                        <p>Fusions, acquisitions, restructuring, due diligence.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('spec', 'esg_advisory', this)">
+                        <h3>ESG & Conformité</h3>
+                        <p>Reporting CSRD, due diligence durable, gouvernance.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('spec', 'audit_assurance', this)">
+                        <h3>Audit & Assurance</h3>
+                        <p>Commissariat aux comptes, audit interne, risk advisory.</p>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Step 2: Firm Size -->
+            <section id="step-2" class="section">
+                <div class="progress-bar"><div class="progress-fill" style="width: 40%"></div></div>
+                <h2>2. Taille de Votre Structure</h2>
+                <p class="step-desc">Le nombre de professionnels influence directement votre capacité de résilience face aux géants.</p>
+                <div class="options-grid">
+                    <button class="option-card" onclick="app.selectOption('size', 'small', this)">
+                        <h3>50 – 100 Professionnels</h3>
+                        <p>Structure agile, spécialisation de niche.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('size', 'medium', this)">
+                        <h3>100 – 150 Professionnels</h3>
+                        <p>Challenger régional, portefeuille diversifié.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('size', 'large', this)">
+                        <h3>150 – 250 Professionnels</h3>
+                        <p>Acteur national significatif, exposition Big 4 élevée.</p>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Step 3: International Exposure -->
+            <section id="step-3" class="section">
+                <div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div>
+                <h2>3. Exposition Internationale</h2>
+                <p class="step-desc">Vos clients opèrent-ils à l'international ? Cela détermine la pression concurrentielle transfrontalière.</p>
+                <div class="options-grid">
+                    <button class="option-card" onclick="app.selectOption('intl', 'local', this)">
+                        <h3>Marché Local Belge</h3>
+                        <p>Clientèle PME locale, faible exposition aux réseaux Big 4.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('intl', 'eu', this)">
+                        <h3>Clients & Opérations UE</h3>
+                        <p>Conseil transfrontalier, directive DAC7, mobilité.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('intl', 'global', this)">
+                        <h3>Envergure Globale</h3>
+                        <p>Clients multinationaux, forte concurrence des réseaux internationaux.</p>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Step 4: Pricing -->
+            <section id="step-4" class="section">
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                <h2>4. Positionnement Tarifaire</h2>
+                <p class="step-desc">Comment se situe votre politique de prix par rapport au marché ?</p>
+                <div class="options-grid">
+                    <button class="option-card" onclick="app.selectOption('pricing', 'premium', this)">
+                        <h3>Premium / Haut de Gamme</h3>
+                        <p>Tarifs supérieurs à la moyenne, valeur ajoutée justifiée.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('pricing', 'mid', this)">
+                        <h3>Mid-Market</h3>
+                        <p>Rapport qualité-prix compétitif, cible principale.</p>
+                    </button>
+                    <button class="option-card" onclick="app.selectOption('pricing', 'volume', this)">
+                        <h3>Volume / Standardisé</h3>
+                        <p>Optimisation des coûts, services à haut volume.</p>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results-section" class="section">
+                <div class="results-header">
+                    <h2>Rapport d'Intelligence Stratégique</h2>
+                    <p class="disclaimer">*Modélisation basée sur l'analyse des signaux publics du marché belge (recrutement, registres, annonces).</p>
+                </div>
+
+                <div class="dashboard">
+                    <!-- Score Cards -->
+                    <div class="score-grid">
+                        <div class="score-card critical">
+                            <span class="score-label">Niveau de Menace Structurelle</span>
+                            <span class="score-value" id="threat-level">Calcul...</span>
+                            <span class="score-context" id="threat-context">Analyse des signaux Big 4...</span>
+                        </div>
+                        <div class="score-card opportunity">
+                            <span class="score-label">Indice d'Opportunité Asymétrique</span>
+                            <span class="score-value" id="asymmetry-index">0/100</span>
+                        </div>
+                        <div class="score-card neutral">
+                            <span class="score-label">Densité Concurrentielle</span>
+                            <span class="score-value" id="crowding-index">Faible</span>
+                        </div>
+                    </div>
+
+                    <!-- Analysis Text -->
+                    <div class="analysis-text">
+                        <h3>Interprétation pour le Managing Partner</h3>
+                        <p id="strategic-narrative">Génération de l'analyse stratégique...</p>
+                    </div>
+
+                    <!-- Heatmap Visualization -->
+                    <div class="heatmap-container">
+                        <h3>Cartographie des Gaps de Service (Big 4)</h3>
+                        <div class="heatmap" id="service-heatmap">
+                            <!-- JS will populate this -->
+                        </div>
+                        <p class="heatmap-legend">Basé sur la modélisation des densités de recrutement public et des annonces de service.</p>
+                    </div>
+
+                    <!-- Consortium Blueprint -->
+                    <div class="consortium-blueprint">
+                        <h3>Simulation de Consortium Stratégique</h3>
+                        <p>Pour contrer l'effet échelle des Big 4, la formation d'un consortium avec des profils complémentaires est une défense structurelle viable.</p>
+                        <div class="archetypes" id="consortium-archetypes">
+                            <!-- JS will populate this -->
+                        </div>
+                        <p class="model-note">Modèle inspiré du "Nordic Legal Collective" (consortium documenté de cabinets scandinaves, 2024).</p>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="cta-container">
+                        <h3>Passer à l'Action Stratégique</h3>
+                        <p>Discutons de la mise en œuvre concrète de cette analyse dans votre plan stratégique 2026.</p>
+                        <a href="https://cal.com/homieux-media/discovery-call-gratuit-discutons-de-vos-defis" target="_blank" rel="noopener noreferrer" class="btn-cta">
+                            Réserver un Diagnostic de 15 Minutes
+                        </a>
+                        <p class="cta-note">Sans engagement. Audit externe de la position concurrentielle.</p>
+                    </div>
+                </div>
+                
+                <button class="btn-secondary" onclick="app.reset()">Nouvelle Analyse</button>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>&copy; 2026 Homieux Media</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://homieuxmedia.com/privacy-policy" target="_blank" rel="noopener noreferrer">Politique de Confidentialité</a>
+                <span class="separator">|</span>
+                <a href="https://homieuxmedia.com/terms-of-use" target="_blank" rel="noopener noreferrer">Conditions d'Utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
